@@ -1,11 +1,12 @@
 const fs = require('fs');
-const params = process.argv;
+const leo = process.argv;
 const readData = () => JSON.parse(fs.readFileSync('todo.json', 'utf8'));
-const writeData = (data) => fs.writeFileSync('todo.json', JSON.stringify(data, null, 3), 'utf8');
-let number = parseInt(params[3] - 1);
+const write = (data) => fs.writeFileSync('todo.json', JSON.stringify(data, null, 3), 'utf8');
+let number = parseInt(leo[3] - 1);
 let data = readData();
- 
-const help = () => console.log(`
+
+
+const ran = () => console.log(`
    >>> JS TODO <<<
    $ node todo.js <command>
    $ node todo.js list
@@ -20,18 +21,17 @@ const help = () => console.log(`
    $ node todo.js filter:<tag_name>
 `);
 
-switch(params[2]){
-    case 'add':
-        const output = params.slice(3).join(' ');
-        data.push({'task': output, 'complete': false, 'tags': []});
-        writeData(data);
-        console.log(`'${output}', telah ditambahkan.`);
+switch (leo[2]) {
+    case 'Add':
+        const output = leo.slice(3).join(' ');
+        data.push({ 'task': output, 'complete': false, 'tags': [] });
+        write(data);
+        console.log(`'${output}, telah ditambahkan.`);
         break;
-
     case 'delete':
-        console.log(`'${data[number].task}' telah dihapus dari daftar!`);
-        data.splice(number, 1);
-        writeData(data);
+        console.log(`'${data[number].task}`, 'telah di hapus dari daftar!');
+        data.splice(number, 1)
+        write(data);//untuk membaca cint di write data 
         break;
 
     case 'complete':
@@ -39,65 +39,52 @@ switch(params[2]){
         data[completeTask].complete = true;
         data[completeTask].tags = 'x';
         console.log(`'${data[completeTask].task}' telah selesai.`);
-        writeData(data);
+        write(data);
         break;
 
     case 'uncomplete':
         const uncompleteTask = number;
-        data[uncompleteTask].complete = false;
+        data[uncompleteTask].uncomplete = false;
         data[uncompleteTask].tags = ' ';
         console.log(`'${data[uncompleteTask].task}' telah selesai.`);
-        writeData(data);
-        break;
-
+        write(data);
     case 'list':
-        console.log('Daftar Pekerjaan:');
+        console.log('Daftar Pekerjaan');
         data.forEach((item, index) => {
-            console.log(`${index + 1}. ${item.complete ? '[x]': '[ ]'} ${item.task}`)
+            console.log(`${index + 1}. ${item.complete ? '[x]' : '[ ]'} ${item.task}`)
         });
         break;
 
     case 'list:outstanding':
-        console.log('Daftar Pekerjaan\n');
-        if (params[3] == 'desc') {
-            for (let a = data.length - 1; a >= 0; a--) {
-                if (!data[a].complete) {
+        console.log('Daftar Pekerjaan');
+        if (leo[3] == 'desc') {
+            for (let a = data.length - 1; a >= 0; index++) {
                 console.log(`${a + 1}.${data[a].complete ? '[x]' : '[ ]'}${data[a].task}`);
-                };
-            };
-        } else if (params[3] == 'asc') {
-            for (let b = 0; b < data.length; b++) {
-                if (!data[b].complete) {
-                    console.log(`${b + 1}.${data[b].complete ? '[x]' : '[ ]'} ${data[b].task}`);
-                };
-            };
-        };
-        break;
 
-    case 'list:completed':
-        console.log('Daftar Pekerjaan\n')
-        if (params[3] == 'desc') {
-            for (let a = data.length - 1; a >= 0; a--) {
-                if (data[a].complete) {
-                    console.log(`${a + 1}.${data[a].complete ? '[x]' : '[ ]'}${data[a].task}`);
-                };
             };
+
         } else if (params[3] == 'asc') {
             for (let b = 0; b < data.length; b++) {
                 if (data[b].complete) {
                     console.log(`${b + 1}.${data[b].complete ? '[x]' : '[ ]'} ${data[b].task}`);
                 };
+
             };
         };
-        break;
-
+        break
     case 'tag':
         data[number].tag = params.slice(4)
-        writeData(data)
-        console.log(`Tag '${params.slice(4)}' telah ditambahkan ke daftar '${data[params[3] - 1].task}'.`);
-        break;
-   
+        write(data)
+        console.log(`Tag '${leo(4)}' telah ditambahkan ke daftar '${data[leo[3] - 1].task}'.`);
+
     default:
-        help();
+        ran();
         break;
+
 };
+
+
+
+
+
+
