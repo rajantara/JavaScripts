@@ -1,3 +1,4 @@
+
 function WeirdMultiply(sentences) {
   let x = sentences.toString()
   let z = x.split("")

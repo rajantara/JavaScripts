@@ -1,0 +1,26 @@
+[
+   {
+      "task": "saya akan memasak",
+      "complete": true,
+      "tags": "x",
+      "tag": [
+         "masak",
+         "sayur"
+      ]
+   },
+   {
+      "task": "saya pergi ke sekolah",
+      "complete": true,
+      "tags": "x"
+   },
+   {
+      "task": "minum susu kuda liar",
+      "complete": false,
+      "tags": [],
+      "tag": [
+         "susu",
+         "kuda",
+         "liar"
+      ]
+   }
+]
