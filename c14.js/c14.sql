@@ -68,5 +68,15 @@ VALUES (111, "010", "90D10", 101, "A"),
 (115, "014", "90D14", 105, "B");
 
 
+/*|c14|c15| catatan||
+integer digunakan terbatas
+varchar digunakan tak terbtas
+auto incemenet untuk menambah nilai secara otomatis
+.mode column untuk buat colum
+.headers on untuk aktifkan header
+SELECT * FROM (NAMA) jangan lupa ;
+. tables untuk cek table
+
+*/
 
 
