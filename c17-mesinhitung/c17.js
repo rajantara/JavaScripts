@@ -22,7 +22,7 @@ class MesinHitung{ //metode ini intuk perulangan pemanggilan
         return this;
     }
 
-    square(number){
+    square(){
         this.x += Math.pow(this.x, 2)
         return this;
     }
@@ -32,7 +32,7 @@ class MesinHitung{ //metode ini intuk perulangan pemanggilan
         return this;
     }
 
-    squareRoot(number){
+    squareRoot(){
         this.x += Math.sqrt(this.x);// math.sqrt adalah untuk mengembalikan akar kuadrat
         return this;
     }
