@@ -24,6 +24,6 @@ Ketika variabel JavaScript dideklarasikan, mereka memiliki nilai awal yang tidak
 
 
 
-
+cd .. out folder
 
 */
