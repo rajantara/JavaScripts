@@ -4,7 +4,7 @@ const path = require("path");
 const fs = require('fs');
 const sqlite3 = require('sqlite3').verbose();
 
-let db = new sqlite3.Database("database.db", (err) => {
+let db = new sqlite3.Database("database.db", (err) => {//ini berfungsi untuk meread data dari sqlite3
     if (err) throw err;
 });
 
@@ -32,7 +32,7 @@ app.get("/", (req, res) => {
     let sql = `SELECT * FROM bread`
     console.log(sql)
 
-    if (req.query.check_id && req.query.id) {
+    if (req.query.check_id && req.query.id) {// untuk mengecek data keseluruhan pada pencarian
         console.log('masuk id');
         result.push(`id = ${parseInt(req.query.id)}`)
         dataFilter = true;
