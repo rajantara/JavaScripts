@@ -1,4 +1,4 @@
-function sum() {// fungsi sum adalah nilai dena di berikan parameter kosong untuk mengisi niali sum di bawah dn akan di jembatani oleh console 
+function sum() {//
     var total = 0// di tahap ini variabel totalnya mulai dari "0" but sometime looping membutukan varibel ini untuk di jumhlakn bersama arguements
     for (let i = 0; i < arguments.length; i++) {//pada tahap ini arguemnts lebih kecil dari "i" dan agruemnets menghitung panjang mengunkan lenght dan di tambah mengunakan i++
         total = total + arguments[i];// disni total akan di jumlakan dengan arguemnts bersama i 
@@ -22,9 +22,10 @@ ingat for adalah looping
 
 1.Variabel tidak diinisialisasi
 Ketika variabel JavaScript dideklarasikan, mereka memiliki nilai awal yang tidak terdefinisi. Jika Anda melakukan operasi matematika pada variabel yang tidak ditentukan, hasil Anda akan menjadi NaN yang berarti "Bukan Angka". Jika Anda menggabungkan string dengan variabel tidak terdefinisi, Anda akan mendapatkan string literal "tidak terdefinisi".
-3.arguments adalah nilai variable
+2.arguments adalah nilai variable
 
+3.fungsi sum adalah nilai dena di berikan parameter kosong untuk mengisi niali sum di bawah dn akan di jembatani oleh console 
 
-2.cd .. out folder berfungsi untuk keluar dari folder sebeleumnya
+4.cd .. out folder berfungsi untuk keluar dari folder sebeleumnya
 
 */
