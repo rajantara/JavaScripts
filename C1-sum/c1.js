@@ -22,7 +22,7 @@ ingat for adalah looping
 
 1.Variabel tidak diinisialisasi
 Ketika variabel JavaScript dideklarasikan, mereka memiliki nilai awal yang tidak terdefinisi. Jika Anda melakukan operasi matematika pada variabel yang tidak ditentukan, hasil Anda akan menjadi NaN yang berarti "Bukan Angka". Jika Anda menggabungkan string dengan variabel tidak terdefinisi, Anda akan mendapatkan string literal "tidak terdefinisi".
-
+3.arguments adalah nilai variable
 
 
 2.cd .. out folder berfungsi untuk keluar dari folder sebeleumnya
