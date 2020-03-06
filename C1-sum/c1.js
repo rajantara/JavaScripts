@@ -1,5 +1,5 @@
-function sum() {//
-    var total = 0// di tahap ini variabel totalnya mulai dari "0" but sometime looping membutukan varibel ini untuk di jumhlakn bersama arguements
+function sum() {
+    var total = 0// di tahap ini variabel totalnya mulai dari "0" but sometimes looping membutukan varibel ini untuk di jumhlakn bersama arguements
     for (let i = 0; i < arguments.length; i++) {//pada tahap ini arguemnts lebih kecil dari "i" dan agruemnets menghitung panjang mengunkan lenght dan di tambah mengunakan i++
         total = total + arguments[i];// disni total akan di jumlakan dengan arguemnts bersama i 
     }   //total akan di tangkap dari var tototal dan akan di tambah arguments varibael index
