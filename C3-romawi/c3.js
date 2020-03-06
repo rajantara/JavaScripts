@@ -4,9 +4,9 @@ function romawi(n) {
 
     let hasil = '';// di tahap ini kamu mengisi string kossong untuk menyipan hasil 
     for (let i = 0; i <= desimal.length; i++) {// dan tahap ini kamu akan melooping index i panjnag desimal sebagaiman biasanya
-        while(desimal[i] <= n) {// while unyul funsgi perulangan nilai desimal i ke "n" atau mengitung panjjang yang ada di desimal "i"
+        while(desimal[i] <= n) {// while untuk funsgi perulangan nilai desimal i ke "n" atau mengitung panjang yang ada di desimal "i"
             hasil = hasil + roman[i];// di tahap ini  hasil akan ditambah roman dengann index i
-            n = n - desimal[i];  // di tahp ini n akn dikurnagi desimal i 
+            n = n - desimal[i];  // di tahap ini akan di kurang  desimal i 
         }
         //menentukan hasil desimal 
     }
@@ -25,7 +25,13 @@ console.log("1453     | MCDLIII  |",romawi(1453));
 console.log("1646     | MCDXLVI  |",romawi(1646));
 
 /*disnini kamu dperintahkan untuk menentukan hasil romawi di hasil result dengan mengunakan simbol 
- i adalah nilai "0" untuk memnetukan hasil dari anghka*/ 
+ i adalah nilai "0" untuk memnetukan hasil dari anghka
+ 
+ 
+ 
+ 
+ 
+ */ 
 
 
 
