@@ -9,14 +9,36 @@ function deretkaskus(n) {
         } else if (k % 6 == 0) {// dan begitu pula yang ini
             hasil.push("KUS");
         } else {
-            hasil.push(k);// dari hasil smua akan di push variabel k dinsini
+            hasil.push(k);// dari hasil smua akan di push variabel k disini
         }
     }
-    return hasil;// digunkan untuk mnahkap atau mnyimpan hasil perulaangan dan sebagagi jembtan untuk mengularkan nilai hasil dari fungsi
+    return hasil;// digunkan untuk menangkap atau menyimpan hasil perulaangan dan sebagagi jembatan untuk mengularkan nilai hasil dari fungsi
 }
 console.log(deretkaskus(10));
 
-// maksdunya jika 5 modulus 5 hasil bagi berapa serpti dibuku
+/* 
+maksdunya jika 5 modulus 5 hasil bagi berapa serpti contoh dibuku dan
+jika hasilnya salah maka hasil terbsebut akan di looping oleh else dan akan di push
+oleh kaskus
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+
 
 
 
