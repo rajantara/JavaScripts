@@ -8,7 +8,7 @@ function stringmanipulation(leo) {
  ) {
     console.log(leo);// pada tahap ni kamu harus looping dulu agar huruf vokal terbaca
  } else {
-     let cayo1 = leo.slice(1); // ebek            // di tahap ini kamu gunakan metode slice untuk memsihakan yang salah huruf vokal(bukan huruf  vokal) masudnya
+     let cayo1 = leo.slice(1); // di tahap ini kamu gunakan metode slice untuk memsihakan yang salah huruf vokal(bukan huruf  vokal) masudnya
      let cayo2 = leo[0].concat("nyo"); //bnyo // pada tahap ini huruf vokal yang salah di tambah pakai metode concat yaoitu nyo 
      let gabung = cayo1 + cayo2; // dan pada tahaap ini cayo 1 dan cayo 2 di gabung ata7u di tambah 
     console.log(gabung); // finaly kamu hasrusb looping lagi 'gabung' untuk mendapat hasilnya  
