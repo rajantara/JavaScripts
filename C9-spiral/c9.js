@@ -1,4 +1,3 @@
-
 function spiral(params) {
     const word = [];
     const word2 = [];
