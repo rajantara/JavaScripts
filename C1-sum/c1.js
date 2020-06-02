@@ -5,17 +5,14 @@ function sum() {
     }   //total akan di tangkap dari var tototal dan akan di tambah arguments varibael index
     console.log(total);// dan hasil semua akan di tangkap oleh console log total 
 }
-sum(1, 2, 7);
-sum(1, 4)
-sum(11)
-sum(10, 3, 6, 7, 9);
 
 
 /*
 catatan penting :
 
 kata kunci
-ingat for adalah looping 
+ingat for adalah looping
+>perintah (node) untuk menjalankan program pada challenge 
 >sum adalah nilai
 >pada tahap loooping apakah i lebih kecil dari agruemnts? maka di hitung panjangnya guys
 
